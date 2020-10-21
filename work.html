@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eun Woo Jee </title>
+    <link href = "https://fonts.googleapis.com/css?family=Lato" rel = "stylesheet">
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <div class = "containers">
+        <div class = "nav-wrapper">
+            <div class = "left-side">
+                <div class = "nav-link-wrapper">
+                    <a href = "index.html">Home</a>
+                </div>
+
+                <div class = "nav-link-wrapper">
+                    <a href = "work.html">Work | Projects</a>
+                </div>
+
+                <div class = "nav-link-wrapper">
+                    <a href = "Resume.html">Resume | Cover Letter</a>
+                </div>
+                <div class = "nav-link-wrapper">
+                    <a href = "contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class = "right-side">
+                <div class = "brand">
+                    <div>EUNWOO JEE</div>
+                </div>
+                <div class = "icon">
+                    <a href = "https://github.com/ejee2020"><i class = "fab fa-github" style = "color : black"></i></a>
+                </div>
+                <div class = "icon">
+                    <a href = "https://linkedin.com/in/ewjee"><i class = "fab fa-linkedin" style = "color : #0072b1"></i></a>
+                </div>
+                <div class = "icon">
+                    <a href = "https://instagram.com/ewjee_"><i class = "fab fa-instagram" style = "color : #833AB4"></i></a>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class = "content-wrapper">
+        <div class = "portfolio-items-wrapper">
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/logistics.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/bdp_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I worked as a business intelligence intern at a logistics company called 
+                        BDP International for three months. I mostly dealt with mySQL and data bases.
+                    </div>
+                </div>
+            </div>
+
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/army.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/army_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I served for the Republic of Korea Army for 21 months as a signaller after sophomore year of college. 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/pokemon.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/build_your_own_world_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I designed and implemented a 2D tile-based world exploration engine using Java. 
+                        Main goal of this project was to learn how to pick suitable data structures to be used.
+                    </div>
+                </div>
+            </div>
+
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/googlemaps.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/bear_maps_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I implemented the back end features for a software similar to Goolge Maps but only for the 
+                        city of Berkeley using various data structures learned in class such as extrinsic priority queue
+                        and KdTree. 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/drive.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/drop_the_tas_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I designed and implemented an algorithm to decide the route and specific locations 
+                        to drop off all the TAs so the energy used by the driver and the TAs combined could be
+                        minimized. My algorihm combined K-Cluster algorithm and 2-Times-Approximation algorithm. 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "portfolio-item-wrapper">
+                <div class = "portfolio-img-background" style = "background-image:url(images/operating.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/operating_system_logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Given the basic skeleton codes provided by the course staff, I improved its 
+                        limitations in User Programs, Scheduling, and File Systems.
+                        I also implemented basic system calls for the operating system called Pintos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+
+    })
+</script>
+</html>
